@@ -7,4 +7,6 @@ import javax.inject.Singleton
 interface BookService {
 
     fun create(book: Book): Book
+    fun update(id: String, book: Book): Book
+    fun delete(id: String)
 }

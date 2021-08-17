@@ -34,6 +34,11 @@ dependencies {
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
+    // Nats
+    implementation("io.micronaut.nats:micronaut-nats")
+
+    // Health
+    implementation("io.micronaut:micronaut-management")
 }
 
 

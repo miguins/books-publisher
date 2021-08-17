@@ -1,3 +1,14 @@
 micronaut:
   application:
     name: booksPublisher
+
+# Health endpoint
+endpoints:
+  health:
+    enabled: true
+    details-visible: ANONYMOUS
+
+# Nats
+nats:
+  addresses:
+    - nats://localhost:4222
