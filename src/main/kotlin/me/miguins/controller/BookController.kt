@@ -13,7 +13,6 @@ class BookController(private val bookService: BookService) {
 
     @Post
     fun create(@Valid @Body request: Book): HttpResponse<Any> {
-
         return HttpResponse.created(bookService.create(request))
     }
 
@@ -24,6 +23,7 @@ class BookController(private val bookService: BookService) {
 
     @Delete("/{id}")
     fun delete(@PathVariable id: String): HttpResponse<Any> {
-        return HttpResponse.ok(bookService.delete(id))
+        bookService.delete(id)
+        return HttpResponse.ok()
     }
 }
