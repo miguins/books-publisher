@@ -1,6 +1,18 @@
 micronaut:
   application:
     name: booksPublisher
+  server:
+    port: 8080
+    cors:
+      enabled: true
+      configurations:
+        all:
+          allowedHeaders:
+            - Content-Type
+          allowedMethods:
+            - POST
+            - PUT
+            - DELETE
 
 # Health endpoint
 endpoints:
