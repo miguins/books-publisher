@@ -1,4 +1,4 @@
-package me.miguins.model
+package me.miguins.core.model
 
 import io.micronaut.core.annotation.Introspected
 import java.math.BigDecimal
